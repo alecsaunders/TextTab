@@ -4,7 +4,7 @@ class TextTabController():
     def __init__(self):
         pass
 
-    def format_tab_to_text(tab):
+    def format_tab_to_text(self, tab):
         measures = tab.split('&')
 
         all_notes = []
@@ -36,7 +36,7 @@ class TextTabController():
         return divs
 
 
-    def generate_divs(all_notes):
+    def generate_divs(self, all_notes):
         divs_list = []
         for m in all_notes:
             measure_lines_list = []
@@ -83,7 +83,7 @@ class TextTabController():
 
         return divs_list
 
-    def add_extra_hyphens(n, max_den, max_char_len):
+    def add_extra_hyphens(self, n, max_den, max_char_len):
         note_char = '-' if n.position == 'n' else n.position
         if max_char_len >= 2:
             note_len = n.duration_frac * max_den * 4
