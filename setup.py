@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+
+from distutils.core import setup
+
 def setup():
     name="TextTab",
     verstion="0.1",
