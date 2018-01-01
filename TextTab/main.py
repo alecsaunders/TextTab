@@ -2,7 +2,7 @@ from . import Note
 
 class TextTabController():
     def __init__(self):
-        self.main()
+        pass
 
     def format_tab_to_text(tab):
         measures = tab.split('&')
