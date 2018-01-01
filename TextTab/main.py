@@ -32,7 +32,7 @@ class TextTabController():
 
             all_notes.append(measure_notes)
 
-        divs = generate_divs(all_notes)
+        divs = self.generate_divs(all_notes)
         return divs
 
 
@@ -51,7 +51,7 @@ class TextTabController():
             max_char_len = int(max(n.char_len for n in m))
 
             for n in m:
-                note_string = add_extra_hyphens(n, max_den, max_char_len)
+                note_string = self.add_extra_hyphens(n, max_den, max_char_len)
 
                 if n.string == 1:
                     if n.position:
