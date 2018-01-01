@@ -2,9 +2,9 @@
 
 from distutils.core import setup
 
-def setup():
+setup(
     name="TextTab",
-    verstion="0.1",
+    version="0.1",
     description='Python package for reading and renduring TextTab (.txtab) files.',
     long_description='Python package for reading and renduring TextTab (.txtab) files.',
     url='https://github.com/uvu2112/TextTab',
@@ -15,7 +15,6 @@ def setup():
 
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
-
 
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
@@ -29,5 +28,4 @@ def setup():
     ],
 
     keywords='TextTab txtab guitar tab tablature',
-
-    python_requires='>=2.6, <4',
+)
