@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name="TextTab",
@@ -21,5 +21,4 @@ setup(
     ],
 
     keywords='TextTab txtab guitar tab tablature',
-    zip_ok = False,
 )
