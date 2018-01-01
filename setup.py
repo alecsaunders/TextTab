@@ -28,4 +28,5 @@ setup(
     ],
 
     keywords='TextTab txtab guitar tab tablature',
+    zip_safe = False,
 )
