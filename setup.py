@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from distutils.core import setup
 
 setup(
@@ -12,12 +10,7 @@ setup(
     author_email='alecsaunders90@gmail.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
-
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
-
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
@@ -28,5 +21,5 @@ setup(
     ],
 
     keywords='TextTab txtab guitar tab tablature',
-    zip_safe = False,
+    zip_ok = False,
 )
