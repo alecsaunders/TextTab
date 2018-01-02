@@ -1,4 +1,4 @@
-from Note import Note
+from . import Note
 
 class TextTabController():
     def __init__(self):
