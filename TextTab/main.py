@@ -1,11 +1,12 @@
-from . import Note
+from Note import Note
 
 class TextTabController():
     def __init__(self):
-        pass
+        self.tab = None
 
     def format_tab_to_text(self, tab):
-        measures = tab.split('&')
+        self.tab = tab
+        measures = self.tab.split('&')
 
         all_notes = []
 
@@ -100,5 +101,37 @@ class TextTabController():
 
         return note_string
 
+    def validate_tab(self):
+        if not self.tab:
+            return False
+        try:
+            meta, tabs_raw = self.tab.split(':===:')
+            meta_val = self.validate_tab_meta(meta)
+            tabs_raw_val = self.validate_tab_tabs_raw(tabs_raw)
+            return meta_val and tabs_raw_val
+        except:
+            return False
+        return False
+
+    def validate_tab_meta(self, meta):
+        if not meta:
+            return False
+        meta_lines = meta.splitlines()
+        for m in meta_lines:
+            if m:
+                if ":" not in m:
+                    return False
+        return True
+
+    def validate_tab_tabs_raw(self, tabs_raw):
+        if tabs_raw:
+            return True
+        return False
+
+
+
 if __name__ == '__main__':
-    txtc = TextTabController()
+    ttc = TextTabController()
+    txtab = open('assets/tab_format.txt', 'r').read()
+    ttc.tab = txtab
+    print(ttc.validate_tab())
