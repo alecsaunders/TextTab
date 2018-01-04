@@ -1,3 +1,11 @@
 assets/
 assets/*
 *.egg-info
+*.pyc
+
+
+
+# TextTab
+TextTab/__pycache__/
+TextTab/__pycache__/*
+TextTab/*.pyc
