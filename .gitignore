@@ -2,6 +2,7 @@ assets/
 assets/*
 *.egg-info
 *.pyc
+.DS_Store
 
 
 
