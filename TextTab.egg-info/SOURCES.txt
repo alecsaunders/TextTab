@@ -1,7 +1,0 @@
-setup.cfg
-setup.py
-TextTab.egg-info/PKG-INFO
-TextTab.egg-info/SOURCES.txt
-TextTab.egg-info/dependency_links.txt
-TextTab.egg-info/not-zip-safe
-TextTab.egg-info/top_level.txt

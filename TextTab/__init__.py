@@ -1,2 +1,3 @@
-from .main import TextTabController
-from . import Note
+from __future__ import absolute_import
+
+from TextTab.main import TextTabController

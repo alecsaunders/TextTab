@@ -1,2 +1,12 @@
 assets/
 assets/*
+*.egg-info
+*.pyc
+.DS_Store
+
+
+
+# TextTab
+TextTab/__pycache__/
+TextTab/__pycache__/*
+TextTab/*.pyc
